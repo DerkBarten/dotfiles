@@ -1,0 +1,4 @@
+auto-reload yes
+browser firefox
+download-full-page yes
+save-path ~/Playground/RSS

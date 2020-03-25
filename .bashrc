@@ -3,8 +3,6 @@
 # catch non-bash and non-interactive shells
 [[ $- == *i* && $BASH_VERSION ]] && SHELL=/bin/bash || return 0
 
-export alias ls=ls --color=always
-
 # set some defaults
 export MANWIDTH=90
 export HISTSIZE=10000
@@ -20,7 +18,7 @@ export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[01;32m'
 
 # ensure ~/bin is on the path
-[[ $PATH =~ ~/.bin ]] || PATH=~/.bin:$PATH
+[[ $PATH =~ ~/.local/bin ]] || PATH=~/.local/bin:$PATH
 [[ $PATH =~ ~/.scripts ]] || PATH=~/.scripts:$PATH
 
 set -o vi
@@ -34,7 +32,7 @@ shopt -s autocd cdspell
 shopt -s extglob dotglob
 shopt -s no_empty_cmd_completion
 shopt -s autocd cdable_vars cdspell
-shopt -s cmdhist histappend histreedit histverify
+#shopt -s cmdhist histappend histreedit histverify
 [[ $DISPLAY ]] && shopt -s checkwinsize
 
 # prompt if file sourcing below fails
@@ -43,15 +41,19 @@ PS1='[\u@\h \W]\$ '
 # uncomment these lines to disable the multi-line prompt
 # add user@host, and remove the unicode line-wrap characters
 
-# export PROMPT_LNBR1=''
-# export PROMPT_MULTILINE=''
-# export PROMPT_USERFMT='\u\[\e[0m\]@\[\e[31m\]\h '
+export PROMPT_LNBR1=''
+export PROMPT_MULTILINE=''
+export PROMPT_USERFMT='\u\[\e[0m\]@\[\e[31m\]\h '
 
 # source shell configs
 for f in "$HOME/.bash/"*?.bash; do
     . "$f"
 done
 
-al-info
+# Default editor
+export VISUAL=vim
+# Add this for info promt on bash startup
+# al-info
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+# No more fzf
+#[ -f ~/.fzf.bash ] && source ~/.fzf.bash
