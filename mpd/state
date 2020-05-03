@@ -1,0 +1,35 @@
+sw_volume: 96
+audio_device_state:1:pulse audio
+state: stop
+current: 0
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:albums/[2017] Roy Pablo/03 - Dance, Baby!.mp3
+1:albums/[2017] Roy Pablo/02 - Everytime.mp3
+2:albums/All Time Low - Last Young Renegade (2017) Mp3.320kbps.[Hunter]/All Time Low - Last Young Renegade (2017)/09. Ground Control (feat. Tegan and Sara).mp3
+3:albums/Clairo - Immunity (2019) [320]/9. Feel Something.mp3
+4:albums/Clairo - Immunity (2019) [320]/2. Impossible.mp3
+5:albums/Dance Gavin Dance - Mothership (2016) [MP3~320Kbps]/Dance Gavin Dance - Mothership (2016)/06 Inspire The Liars.mp3
+6:albums/Hurry Up, We're Dreaming/02 Midnight City.mp3
+7:albums/Movements - Feel Something (2017) (Mp3 320kbps) [Hunter]/Movements - Feel Something (2017) [MZ Music]/04 Daylily.mp3
+8:albums/Panic At The Disco-Death Of A Bachelor (2016)/07-panic_at_the_disco-la_devotee-47bc11.mp3
+9:albums/Panic! At The Disco - Too Weird To Live, Too Rare To Die! [2013] 320/Too Weird To Live, Too Rare To Die! @ 320/06 - GirlsGirlsBoys.mp3
+10:albums/All Time Low - Last Young Renegade (2017) Mp3.320kbps.[Hunter]/All Time Low - Last Young Renegade (2017)/01. Last Young Renegade.mp3
+11:albums/BROCKHAMPTON - SATURATION III (2017) Mp3 (320kbps) [Hunter]/BROCKHAMPTON - SATURATION III (2017)/01 BOOGIE.mp3
+12:albums/Radical Face/Radical Face - Ghost/01 - Radical Face - Asleep on a train.mp3
+13:albums/All Time Low - Last Young Renegade (2017) Mp3.320kbps.[Hunter]/All Time Low - Last Young Renegade (2017)/01. Last Young Renegade.mp3
+14:albums/All Time Low - Last Young Renegade (2017) Mp3.320kbps.[Hunter]/All Time Low - Last Young Renegade (2017)/02. Drugs & Candy.mp3
+15:albums/All Time Low - Last Young Renegade (2017) Mp3.320kbps.[Hunter]/All Time Low - Last Young Renegade (2017)/03. Dirty Laundry.mp3
+16:albums/All Time Low - Last Young Renegade (2017) Mp3.320kbps.[Hunter]/All Time Low - Last Young Renegade (2017)/04. Good Times.mp3
+17:albums/All Time Low - Last Young Renegade (2017) Mp3.320kbps.[Hunter]/All Time Low - Last Young Renegade (2017)/05. Nice2KnoU.mp3
+18:albums/All Time Low - Last Young Renegade (2017) Mp3.320kbps.[Hunter]/All Time Low - Last Young Renegade (2017)/06. Life Of The Party.mp3
+19:albums/All Time Low - Last Young Renegade (2017) Mp3.320kbps.[Hunter]/All Time Low - Last Young Renegade (2017)/07. Nightmares.mp3
+20:albums/All Time Low - Last Young Renegade (2017) Mp3.320kbps.[Hunter]/All Time Low - Last Young Renegade (2017)/08. Dark Side Of Your Room.mp3
+21:albums/All Time Low - Last Young Renegade (2017) Mp3.320kbps.[Hunter]/All Time Low - Last Young Renegade (2017)/10. Afterglow.mp3
+playlist_end

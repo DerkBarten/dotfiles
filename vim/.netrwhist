@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/daniel/doc/notes'
+let g:netrw_dirhist_0='/home/daniel/.config/picom'
+let g:netrw_dirhist_9='/home/daniel/.local/backup/dotfiles'
+let g:netrw_dirhist_8='/home/daniel/.config/picom'
+let g:netrw_dirhist_7='/home/daniel/.config/polybar'
+let g:netrw_dirhist_6='/home/daniel/.config'
+let g:netrw_dirhist_5='/home/daniel/.config/transmission-daemon'
+let g:netrw_dirhist_4='/home/daniel/.config/transmission-daemon/torrents'
+let g:netrw_dirhist_3='/home/daniel/.config/transmission-daemon'
+let g:netrw_dirhist_2='/home/daniel/.local/share/gnupg'

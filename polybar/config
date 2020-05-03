@@ -38,7 +38,7 @@ monitor =
 
 modules-left   = i3 menu
 modules-center = clock
-modules-right  = pkg temperature battery volume
+modules-right  =  mpd wireless-network pkg temperature battery volume
 
 ;=====================================================
 ;     Bspwm Bars
