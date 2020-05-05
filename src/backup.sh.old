@@ -1,0 +1,35 @@
+BASE_FOLDER="$HOME"
+FOLDERS=".gnucash .local/bin .ssh .gnupg .dotfiles .scripts Documents Playground/PwChallenge Education Pictures"
+BACKUP_FOLDER="$BASE_FOLDER/.backup"
+
+function make_backup(){
+    mkdir -p $BACKUP_FOLDER
+    pacman -Qe > packages.txt
+    FILES="$(for FOLDER in $FOLDERS; do echo -n "$BASE_FOLDER/$FOLDER "; done) packages.txt"
+    echo "Backing up folders: $FILES"
+
+    FILENAME=$BACKUP_FOLDER"/backup_"$(date "+%d-%m-%y")".tar.gz"
+    echo "Creating backup as: $FILENAME"
+
+    tar -czf $FILENAME $FILES
+    rm packages.txt
+    if [[ "$?" -eq "0" ]]; then
+        notify-send "Files successfully backed up in $BACKUP_FOLDER"
+    else
+        notify-send "Failed to backup files to $BACKUP_FOLDER" 
+    fi
+}
+
+function push_backup(){
+    SERVER="plato"
+    SERVER_FOLDER="/home/admin/backup"
+    scp $(ls -t $BACKUP_FOLDER | head -n 1) $SERVER:$SERVER_FOLDER
+    if [[ "$?" -eq "0" ]]; then
+        notify-send "Files successfully sent to $SERVER:$SERVER_FOLDER"
+    else
+        notify-send "Failed to send files to $SERVER:$SERVER_FOLDER"
+    fi
+}
+
+make_backup
+push_backup

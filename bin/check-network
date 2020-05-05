@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+while true; do
+    VPN=""
+    if [ -n "$(ip link | grep tun0)" ]
+    then
+        VPN=" (VPN)"
+    fi
+    IP=$(ip addr | grep wlp2s0 | tail -n 1 | grep -Po "(?<=(inet ))[0-9\./]*")
+    echo "$IP$VPN"
+    sleep 1
+done
